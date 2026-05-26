@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ZhangHanrui (Daniel) Lab 07</title>
+    <title>ZhangHanrui (Daniel) Lab 07 Production</title>
     <style>
       body {
         margin: 0;
@@ -49,6 +49,18 @@
         line-height: 1.7;
       }
 
+      .environment {
+        display: inline-block;
+        margin-bottom: 16px;
+        padding: 6px 10px;
+        background: #111827;
+        color: #ffffff;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
       @media (max-width: 720px) {
         main {
           margin: 24px;
@@ -61,12 +73,13 @@
     <main>
       <img src="profile.jpg" alt="Profile image for ZhangHanrui Daniel">
       <section>
+        <span class="environment">Production Server</span>
         <h1>ZhangHanrui (Daniel)</h1>
         <p class="meta">Student ID: 20232098</p>
         <p class="profile">
-          This is my Lab 07 automated deployment page. I am practicing continuous
-          deployment with GitHub Actions, SSH, SCP, and Nginx. Every update to
-          this page is deployed automatically to my AWS EC2 server.
+          This is my Lab 07 production deployment page. It is deployed from the
+          prod branch with GitHub Actions, SSH, SCP, and Nginx to a separate AWS
+          EC2 production server.
         </p>
       </section>
     </main>
